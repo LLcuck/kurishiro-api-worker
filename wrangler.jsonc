@@ -1,0 +1,16 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "kuroshiro",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-04-30",
+	"compatibility_flags": [
+		"nodejs_compat_v2"
+	],
+	"observability": {
+		"enabled": true
+	}
+}

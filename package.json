@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "kuroshiro": "^1.2.0",
-    "@sglkc/kuroshiro-analyzer-kuromoji": "^1.1.0"
+    "@sglkc/kuroshiro-analyzer-kuromoji": "latest"
   },
   "devDependencies": {
     "esbuild": "^0.19.12",

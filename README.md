@@ -1,6 +1,6 @@
 [中文](#中文) | [English](#english)
 
-# 项目名称：Kuroshiro Worker
+# Kuroshiro Worker
 
 ## 中文
 

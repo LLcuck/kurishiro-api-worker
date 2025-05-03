@@ -4,10 +4,12 @@
   "main": "dist/index.js",
   "compatibility_date": "2025-05-03",
   "compatibility_flags": ["nodejs_compat_v2"],
+  "workers_dev": true,
+
   "build": {
     "command": "npm run build",
-    "cwd": ".",
-    "watch_dir": "src"
-  },
-  "workers_dev": true
+    "upload": {
+      "main": "dist/index.js"
+    }
+  }
 }

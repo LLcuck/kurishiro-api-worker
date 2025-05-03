@@ -1,10 +1,9 @@
 {
   "name": "kuroshiro-worker",
   "version": "1.0.0",
-  "description": "Cloudflare Worker converting Japanese text to Hiragana, Katakana, or Romaji via Kuroshiro, with OpenAI‑compatible chat completions and optional streaming support.",
   "license": "MIT",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --target=es2020 --format=esm --outfile=dist/index.js --external:fs --external:path",
+    "build": "esbuild src/index.ts --bundle --platform=browser --target=es2020 --format=esm --outfile=dist/index.js --external:fs --external:path",
     "dev": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy"
   },

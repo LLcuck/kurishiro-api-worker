@@ -1,3 +1,15 @@
+// src/index.ts
+// —————— 动态 require Polyfill ——————
+declare global { var require: any; }
+globalThis.require = (module: string) => {
+  if (module === "fs" || module === "path") {
+    return {};      // 屏蔽掉对 fs 和 path 的实际调用
+  }
+  throw new Error(`Module not found: ${module}`);
+};
+// —————————————————————————————————————
+
+// 然后才是原来的 XHR polyfill、Kuroshiro 逻辑……
 import Kuroshiro from "kuroshiro";
 import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
 

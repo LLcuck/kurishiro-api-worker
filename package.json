@@ -4,7 +4,7 @@
   "description": "Cloudflare Worker converting Japanese text via Kuroshiro (Hiragana/Katakana/Romaji), simple REST + OpenAI‑compatible streaming",
   "license": "MIT",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --target=es2020 --format=esm --outfile=dist/index.js",
+    "build": "esbuild src/index.ts --bundle --platform=node --target=es2020 --format=esm --outfile=dist/index.js",
     "dev":  "npm run build && wrangler dev",
     "deploy":"npm run build && wrangler deploy"
   },

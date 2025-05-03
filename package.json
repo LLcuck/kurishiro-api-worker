@@ -2,6 +2,7 @@
   "name": "kuroshiro-worker",
   "version": "1.0.0",
   "license": "MIT",
+  "description": "Cloudflare Worker converting Japanese text via Kuroshiro; OpenAI‑compatible API & streaming",
   "scripts": {
     "build": "esbuild src/index.ts --bundle --platform=browser --target=es2020 --format=esm --outfile=dist/index.js --external:fs --external:path",
     "dev": "npm run build && wrangler dev",
@@ -9,7 +10,7 @@
   },
   "dependencies": {
     "kuroshiro": "^1.2.0",
-    "kuroshiro-analyzer-kuromoji": "^1.1.0"
+    "@sglkc/kuroshiro-analyzer-kuromoji": "^1.1.0"
   },
   "devDependencies": {
     "esbuild": "^0.19.12",

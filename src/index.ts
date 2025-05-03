@@ -11,7 +11,7 @@ globalThis.require = (module: string) => {
 
 // 然后才是原来的 XHR polyfill、Kuroshiro 逻辑……
 import Kuroshiro from "kuroshiro";
-import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
+import KuromojiAnalyzer from "@sglkc/kuroshiro-analyzer-kuromoji";
 
 // --------- XHR Polyfill for Cloudflare Workers ---------
 declare global { var XMLHttpRequest: any; }

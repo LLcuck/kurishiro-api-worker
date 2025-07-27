@@ -7,9 +7,6 @@
   "workers_dev": true,
 
   "build": {
-    "command": "npm run build",
-    "upload": {
-      "main": "dist/index.js"
-    }
+    "command": "npm run build"
   }
 }
